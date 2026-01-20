@@ -130,6 +130,18 @@ platforms:
       name: "虫部落"
 
 
+    - id: "tencent-hot"
+      name: "腾讯新闻 综合早报"
+    - id: "cls-telegraph"
+      name: "财联社 电报"
+    - id: "cls-depth"
+      name: "财联社 深度"
+    - id: "fastbull-express"
+      name: "法布财经 快讯"
+    - id: "fastbull-news"
+      name: "法布财经 头条"
+
+
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
@@ -206,8 +218,8 @@ rss:
 #    • 适用场景：避免重复信息干扰
 # ===============================================================
 report:
-  mode: "current"                     # 可选: daily | current | incremental
-  display_mode: "keyword"             # 分组维度: keyword | platform
+  mode: "incremental"                     # 可选: daily | current | incremental
+  display_mode: "platform"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
                                       # platform: 按平台/来源分组显示
 
